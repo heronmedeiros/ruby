@@ -120,7 +120,17 @@ module PagSeguro
       end
 
       def to_amount(amount)
-        "%.2f" % BigDecimal(amount.to_s).round(2).to_s("F") if amount
+        if amount && amount.to_s != '' && its_a_number(amount)
+          value = amount.to_s
+        else
+          value = 0
+        end
+
+        "%.2f" % BigDecimal(value).round(2).to_s("F")
+      end
+
+      def its_a_number(value)
+        value.class == Float or value.class == Integer
       end
 
       def xml_builder
