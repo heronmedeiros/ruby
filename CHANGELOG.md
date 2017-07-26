@@ -1,3 +1,6 @@
+3.0.0
+- Aceitando versão do 2.4.1 do Ruby
+
 2.6.0
 
 - Assinatura

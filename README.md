@@ -17,7 +17,7 @@ A biblioteca PagSeguro em Ruby é um conjunto de classes de domínio que facilit
 
 ## Requisitos
 
- - [Ruby] 1.9.3+
+ - [Ruby] 2.4
  - [Aitch] 0.2.1+
 
 
