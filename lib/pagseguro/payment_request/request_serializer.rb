@@ -130,7 +130,7 @@ module PagSeguro
       end
 
       def its_a_number(value)
-        value.class == Float or value.class == Integer
+        value.class == Float or value.class == Integer or value.class == BigDecimal
       end
 
       def xml_builder
